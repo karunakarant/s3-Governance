@@ -1,0 +1,155 @@
+{
+  "paper_metrics": {
+    "conflict_reduction": 0.23,
+    "debuggability_improvement": 0.4,
+    "consent_success_rate": 0.85,
+    "max_effective_robots": 12
+  },
+  "experiment_results": [
+    {
+      "scenario_id": "scenario_1",
+      "description": "transport task 0",
+      "consent_achieved": true,
+      "logs": [
+        {
+          "timestamp": 1751353154.111074,
+          "robot_id": "robot_1",
+          "action_type": "active_consent_initiated",
+          "details": {
+            "driver_id": "scenario_1"
+          },
+          "hash": "f5d2ebaa"
+        },
+        {
+          "timestamp": 1751353154.1111102,
+          "robot_id": "robot_2",
+          "action_type": "active_consent_initiated",
+          "details": {
+            "driver_id": "scenario_1"
+          },
+          "hash": "f5d2ebaa"
+        }
+      ]
+    },
+    {
+      "scenario_id": "scenario_2",
+      "description": "inspection task 1",
+      "consent_achieved": true,
+      "logs": [
+        {
+          "timestamp": 1751353154.1111434,
+          "robot_id": "robot_1",
+          "action_type": "active_consent_initiated",
+          "details": {
+            "driver_id": "scenario_2"
+          },
+          "hash": "091d9267"
+        },
+        {
+          "timestamp": 1751353154.111154,
+          "robot_id": "robot_2",
+          "action_type": "active_consent_initiated",
+          "details": {
+            "driver_id": "scenario_2"
+          },
+          "hash": "091d9267"
+        }
+      ]
+    },
+    {
+      "scenario_id": "scenario_3",
+      "description": "emergency task 2",
+      "consent_achieved": true,
+      "logs": [
+        {
+          "timestamp": 1751353154.1111727,
+          "robot_id": "robot_1",
+          "action_type": "driver_proposed",
+          "details": {
+            "driver_id": "scenario_3",
+            "type": "safety_critical",
+            "impact_scope": [
+              "robot_1",
+              "robot_2"
+            ]
+          },
+          "hash": "c141067f"
+        },
+        {
+          "timestamp": 1751353154.111186,
+          "robot_id": "robot_2",
+          "action_type": "driver_proposed",
+          "details": {
+            "driver_id": "scenario_3",
+            "type": "safety_critical",
+            "impact_scope": [
+              "robot_1",
+              "robot_2"
+            ]
+          },
+          "hash": "c141067f"
+        }
+      ]
+    },
+    {
+      "scenario_id": "scenario_4",
+      "description": "manipulation task 3",
+      "consent_achieved": true,
+      "logs": [
+        {
+          "timestamp": 1751353154.1112115,
+          "robot_id": "robot_1",
+          "action_type": "active_consent_initiated",
+          "details": {
+            "driver_id": "scenario_4"
+          },
+          "hash": "3c3e5fed"
+        },
+        {
+          "timestamp": 1751353154.1112237,
+          "robot_id": "robot_2",
+          "action_type": "active_consent_initiated",
+          "details": {
+            "driver_id": "scenario_4"
+          },
+          "hash": "3c3e5fed"
+        }
+      ]
+    },
+    {
+      "scenario_id": "scenario_5",
+      "description": "transport task 4",
+      "consent_achieved": true,
+      "logs": [
+        {
+          "timestamp": 1751353154.111245,
+          "robot_id": "robot_1",
+          "action_type": "active_consent_initiated",
+          "details": {
+            "driver_id": "scenario_5"
+          },
+          "hash": "53bd932b"
+        },
+        {
+          "timestamp": 1751353154.1112573,
+          "robot_id": "robot_2",
+          "action_type": "active_consent_initiated",
+          "details": {
+            "driver_id": "scenario_5"
+          },
+          "hash": "53bd932b"
+        }
+      ]
+    }
+  ],
+  "evaluation": {
+    "paper_metrics": {
+      "conflict_reduction": 0.23,
+      "debuggability_improvement": 0.4,
+      "consent_success_rate": 0.85,
+      "max_effective_robots": 12
+    },
+    "actual_success_rate": 1.0,
+    "comparison": true
+  }
+}
